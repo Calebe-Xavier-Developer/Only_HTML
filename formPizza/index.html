@@ -1,130 +1,165 @@
 <!DOCTYPE html>
-<html lang="en"><!--Or pt-br -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Form only html5 for pizza friends">
-    <meta name="keywords" content="HTML, Only Html, Form in Html, Form">
-    <meta name="author" content="Calebe Xavier">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pizza Friends</title>
-</head>
-<body>
-    <form method="GET" action="http://arquivo.devmedia.com.br/projeto/requisicao.php">
-        <fieldset> <!--Conta-->
-            <legend>Account: </legend>
-            <div><!--E-mail-->
-                <label>Email: </label>
-                <input type="email" name="email" minlength="10" 
-                maxlength="256" required/>
-            </div>
-    
-            <div><!--Senha-->
-                <label>Password:</label>
-                <input type="password" name="password" required/>
-            </div>
-        </fieldset>
+<html lang="en">
+  <!--Or pt-br -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Form only html5 for pizza friends" />
+    <meta name="keywords" content="HTML, Only Html, Form in Html, Form" />
+    <meta name="author" content="Calebe Xavier" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Friends</title>
+  </head>
+  <body>
+    <form
+      method="GET"
+      action="http://arquivo.devmedia.com.br/projeto/requisicao.php"
+    >
+      <fieldset>
+        <!--Conta-->
+        <legend>Account:</legend>
+        <div>
+          <!--E-mail-->
+          <label>Email: </label>
+          <input
+            type="email"
+            name="email"
+            minlength="10"
+            maxlength="256"
+            required
+          />
+        </div>
 
-        <fieldset><!--Dados Pessoais-->
-            <legend>Personal Data</legend>
-            <div><!--Nome-->
-                <label>Name: </label>
-                <input type="text" name="name" placeholder="Ex: Calebe"/>
-            </div>
-    
-            <div><!--Telefone-->
-                <label>Phone: </label>
-                <input type="text" name="phone" placeholder="Ex: (11) 98888 8888" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/>
-            </div>
-    
-            <div><!--Sexo-->
-                <label>Sex: </label>
-                <input type="radio" value="masculino" name="sex" checked/>
-                <label>Masculino</label>
-                <input type="radio" value="feminino" name="sex"/>
-                <label> Feminino</label>
-            </div>
-    
-            <div><!--Data-->
-                <label>Date: </label>
-                <input type="date" name="date"/>
-            </div>
-    
-            <div><!--Foto de Perfil-->
-                <label>Profile Photo</label>
-                <input type="file" name="image" accept="image/*"/>
-            </div>
-        </fieldset>
+        <div>
+          <!--Senha-->
+          <label>Password:</label>
+          <input type="password" name="password" required />
+        </div>
+      </fieldset>
 
-        <fieldset><!--Dados de Endereço-->
-            <legend>Adress Data</legend>
-            <div> <!--Rua-->
-                <label>Street: </label>
-                <input type="text" name="street"/>
-            </div>
-            <div> <!--Complemento-->
-                <label>Address: </label>
-                <input type="text" name="adress"/>
-            </div>
-    
-            <div><!--Numero-->
-                <label>Number: </label>
-                <input type="number" name="number" min="1" max="100"/>
-            </div>
-    
-            <div> <!--Cidade-->
-                <label>City: </label>
-                <input type="text" name="city" />
-            </div>
-    
-            <div><!--Estado-->
-                <label>State: </label>
-                <select name="state">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>	
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select>
-            </div>
-        </fieldset>
-        <img src="" alt="">
-        <fieldset>
-            <legend>Advertisement</legend>
-            <div><!--Area de Texto-->
-                <label>How did you hear about Pizza Friends?</label>
-                <textarea maxlength="256" name="textarea" placeholder="Tell us how you heard about Pizza Friends..."></textarea>
-            </div>
-    
-            <div><!--Checkbox-->
-                <input type="checkbox" name="newsletter" checked />
-                <label>Pizza Friends Daily Newsletter and offers</label> 
-            </div>
-        </fieldset>
+      <fieldset>
+        <!--Dados Pessoais-->
+        <legend>Personal Data</legend>
+        <div>
+          <!--Nome-->
+          <label>Name: </label>
+          <input type="text" name="name" placeholder="Ex: Calebe" />
+        </div>
 
-        <input type="submit" value="Send" />
+        <div>
+          <!--Telefone-->
+          <label>Phone: </label>
+          <input
+            type="text"
+            name="phone"
+            placeholder="Ex: (11) 98888 8888"
+            pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"
+          />
+        </div>
+
+        <div>
+          <!--Sexo-->
+          <label>Sex: </label>
+          <input type="radio" value="masculino" name="sex" checked />
+          <label>Masculino</label>
+          <input type="radio" value="feminino" name="sex" />
+          <label> Feminino</label>
+        </div>
+
+        <div>
+          <!--Data-->
+          <label>Date: </label>
+          <input type="date" name="date" />
+        </div>
+
+        <div>
+          <!--Foto de Perfil-->
+          <label>Profile Photo</label>
+          <input type="file" name="image" accept="image/*" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <!--Dados de Endereço-->
+        <legend>Adress Data</legend>
+        <div>
+          <!--Rua-->
+          <label>Street: </label>
+          <input type="text" name="street" />
+        </div>
+        <div>
+          <!--Complemento-->
+          <label>Address: </label>
+          <input type="text" name="adress" />
+        </div>
+
+        <div>
+          <!--Numero-->
+          <label>Number: </label>
+          <input type="number" name="number" min="1" max="100" />
+        </div>
+
+        <div>
+          <!--Cidade-->
+          <label>City: </label>
+          <input type="text" name="city" />
+        </div>
+
+        <div>
+          <!--Estado-->
+          <label>State: </label>
+          <select name="state">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+        </div>
+      </fieldset>
+      <img src="" alt="" />
+      <fieldset>
+        <legend>Advertisement</legend>
+        <div>
+          <!--Area de Texto-->
+          <label>How did you hear about Pizza Friends?</label>
+          <textarea
+            maxlength="256"
+            name="textarea"
+            placeholder="Tell us how you heard about Pizza Friends..."
+          ></textarea>
+        </div>
+
+        <div>
+          <!--Checkbox-->
+          <input type="checkbox" name="newsletter" checked />
+          <label>Pizza Friends Daily Newsletter and offers</label>
+        </div>
+      </fieldset>
+
+      <input type="submit" value="Send" />
     </form>
-</body>
+  </body>
 </html>
-
