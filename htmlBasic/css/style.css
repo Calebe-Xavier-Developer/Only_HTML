@@ -15,3 +15,24 @@
   font-size: 16px;
   font-style: italic;
 }
+
+.post {
+  background: gray;
+  padding: 15px;
+  border: 3px solid black;
+}
+
+.capa_fig {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+
+.capa {
+  width: 50%;
+  margin: 10px;
+  background-position: center;
+  background-size: cover;
+}
